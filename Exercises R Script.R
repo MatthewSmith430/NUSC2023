@@ -2,8 +2,12 @@ library(tidyverse)
 
 ##Exercise 2
 library(readr) # These functions are part of the readr package in the tidyverse
+library(janitor)
 
-TRADE<-read_csv("TRADE DATA.csv")
+TRADE<-read_csv("TRADE DATA.csv")%>%
+	clean_names()
+
+
 
 library(dplyr) # These functions are part of the dplyr package in the tidyverse
 
